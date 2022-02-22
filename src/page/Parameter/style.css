@@ -1,0 +1,10 @@
+.input-filed-custom-style{
+
+    display: inline !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    background: transparent !important;
+    width: 30% !important;
+    margin: 0 5px !important;
+}
