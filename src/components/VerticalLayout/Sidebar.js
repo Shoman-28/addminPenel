@@ -38,7 +38,7 @@ const Sidebar = props => {
                 className="text-white mt-2 p-2 "
                 style={{ fontSize: "20px", verticalAlign: "middle" }}
               >
-                MRI
+                Ecommerce
               </span>
             </span>
           </Link>

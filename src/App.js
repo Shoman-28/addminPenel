@@ -47,10 +47,10 @@ const App = props => {
     let layoutCls = VerticalLayout
     switch (props.layout.layoutType) {
       case "horizontal":
-        layoutCls = HorizontalLayout
+        layoutCls = HorizontalLayout              
         break
       default:
-        layoutCls = VerticalLayout
+        layoutCls = NonAuthLayout
         break
     }
     return layoutCls

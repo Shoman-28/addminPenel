@@ -176,23 +176,30 @@ import Contact from "page/contact"
 import Slider from "page/Slider"
 import riteAdvantage from "page/RiteAdvantage"
 import { companyPreference } from "page/companyPreference"
+
 import AddProduct from "page/Add_Product/Add_Product"
 import OrderList from "page/Order_list/index"
-import ManageProduct from "page/Add_Product/Add_Product"
-import MakeAdmin from "page/Add_Product/Add_Product"
+import ManageProduct from "page/Manage_Service/index"
+import MakeAdmin from "page/Make_Admin/index"
+
+import Home from "../page/Home/index"
 
 const authProtectedRoutes = [
-  { path: "/", component: Main },
- 
+  { path: "/", exact: true, component: Home },
+ // { path: "/", exact: true, component: () => <Redirect to="/dashboard" /> },
   { path: "/file-received", component: FileRecieve },
   { path: "/invoices-created", component: Main },
   { path: "/contacts", component: Contact },
   { path: "/slider", component: Slider },
   { path: "/riteAdvantage", component: riteAdvantage },
-  { path: "/addProduct", component: AddProduct },
-  { path: "/manageProduct", component: ManageProduct },
+
+  //my create componunts
   { path: "/orderList", component: OrderList },
+  { path: "/addProduct", component: AddProduct },
   { path: "/makeAdmin", component: MakeAdmin },
+  { path: "/manageProduct", component: ManageProduct },
+
+
 
   { path: "/company-prefernces", component: companyPreference },
   // { path: "/dashboard", component: Dashboard },
@@ -335,7 +342,7 @@ const authProtectedRoutes = [
 
   // this route should be at the end of all other routes
   // eslint-disable-next-line react/display-name
-  { path: "/", exact: true, component: () => <Redirect to="/dashboard" /> },
+  // { path: "/", exact: true, component: () => <Redirect to="/dashboard" /> },
 ]
 
 const publicRoutes = [
@@ -354,6 +361,9 @@ const publicRoutes = [
   { path: "/crypto-ico-landing", component: CryptoIcoLanding },
 
   // Authentication Inner
+
+
+
   { path: "/pages-login", component: Login1 },
   { path: "/pages-login-2", component: Login2 },
   { path: "/pages-register", component: Register1 },

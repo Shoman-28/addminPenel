@@ -106,19 +106,19 @@ const SidebarContent = props => {
               </Link>
             </li>
             <li>
-              <Link to="/parameter" className=" ">
+              <Link to="/makeAdmin" className=" ">
                 <i className="bx bx-import"></i>
-                <span>{props.t("parameter")}</span>
+                <span>{props.t("Make Admin")}</span>
               </Link>
             </li>
             <li>
-              <Link to="/riteAdvantage" className=" ">
+              <Link to="/manageProduct" className=" ">
                 <i className="bx bx-import"></i>
-                <span>{props.t("Rite Advantage")}</span>
+                <span>{props.t("Manage Product")}</span>
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link to="#" className="has-arrow ">
                 <i className="bx bx-receipt"></i>
                 <span>{props.t("Other option")}</span>
@@ -131,7 +131,7 @@ const SidebarContent = props => {
                   <Link to="/slider">{props.t("slider")}</Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
           
            
            
